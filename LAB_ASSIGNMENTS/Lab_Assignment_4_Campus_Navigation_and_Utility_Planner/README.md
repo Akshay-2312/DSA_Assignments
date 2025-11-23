@@ -80,7 +80,9 @@ The program provides a menu-driven interface with the following options:
 ```
 
 ## Author
-[Your Name]
+[Akshay yadav]
+[2401730129]
+[Data Structures]
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
