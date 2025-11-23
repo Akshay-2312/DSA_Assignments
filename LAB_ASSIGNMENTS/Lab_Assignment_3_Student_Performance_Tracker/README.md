@@ -45,6 +45,6 @@ Lab_Assignment_3_Student_Performance_Tracker/
 - Screenshot files are placeholders—replace with real captures after running.
 
 ## Author
-- Name: <Your Name>
-- ID: <Your Student ID>
-- Course: <Course Name>
+- Name: <Akshay yadav>
+- ID: <2401730129>
+- Course: <DATA STRUCTURES>
