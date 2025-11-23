@@ -1,0 +1,56 @@
+# Weather Data Storage System - Implementation Report
+
+## 1. Introduction
+[Provide an overview of the weather data problem, its importance, and the goals of this implementation]
+
+## 2. ADT Design
+### WeatherRecord ADT
+- **Attributes**: 
+  - Date (string in DD/MM/YYYY format)
+  - City (string)
+  - Temperature (double)
+- **Methods**:
+  - Constructors and destructors
+  - Getters and setters
+  - Operator overloading (==)
+  - toString() for display
+
+## 3. Data Storage Representation
+- **2D Array Structure**: weatherTable[years][cities]
+- **Mapping**: Using unordered_maps to map city names and years to array indices
+- **Sentinel Values**: Using -999.0 to represent missing data
+
+## 4. Row vs Column Major Access
+- **Row-Major Access**: Traversing the 2D array by rows first
+  - Implementation details and performance characteristics
+  - Index Formula: index = row * total_columns + column
+  
+- **Column-Major Access**: Traversing the 2D array by columns first
+  - Implementation details and performance characteristics
+  - Index Formula: index = column * total_rows + row
+  
+- **Performance Comparison**: [Include your findings from testing]
+
+## 5. Sparse Data Handling
+- **Sparse Matrix Representation**: Using 3-tuple form (row, col, value)
+- **Implementation**: MatrixCell struct and SparseMatrix class
+- **Conversion Process**: From dense to sparse representation
+- **Example**: [Include a specific example with data]
+
+## 6. Complexity Analysis
+[Include your table comparing dense vs sparse implementations]
+
+| Operation | Dense Matrix | Sparse Matrix |
+|-----------|--------------|--------------|
+| Insert    | O(1)         | O(1)         |
+| Delete    | O(1)         | O(1)         |
+| Retrieve  | O(1)         | O(1)         |
+| Space     | O(n×m)       | O(k)         |
+
+Where:
+- n = number of years
+- m = number of cities
+- k = number of non-sentinel elements
+
+## 7. Conclusion
+[Summarize the implementation, key findings, and learning outcomes]

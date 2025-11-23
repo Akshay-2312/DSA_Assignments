@@ -1,0 +1,44 @@
+# Weather Data Storage System - Complexity Analysis
+
+## Time Complexity Analysis
+
+| Operation | Dense Matrix | Sparse Matrix | Explanation |
+|-----------|--------------|--------------|-------------|
+| Insert    | O(1)         | O(1)         | Both implementations use direct indexing or hash maps |
+| Delete    | O(1)         | O(1)         | Both use direct access to elements |
+| Retrieve  | O(1)         | O(1)         | Both use direct lookup by indices |
+| Row-Major Access | O(n×m) | O(k)        | Dense: Must traverse all cells; Sparse: Only traverses non-sentinel values |
+| Column-Major Access | O(n×m) | O(k)     | Dense: Must traverse all cells; Sparse: Only traverses non-sentinel values |
+
+## Space Complexity Analysis
+
+| Implementation | Space Complexity | Explanation |
+|----------------|------------------|-------------|
+| Dense Matrix   | O(n×m)           | Stores all possible combinations of years and cities |
+| Sparse Matrix  | O(k)             | Only stores non-sentinel values |
+
+## Memory Usage Comparison
+
+[Include your experimental results here, showing actual memory usage]
+
+| Dataset Size | Dense Matrix Memory | Sparse Matrix Memory | Memory Savings |
+|--------------|---------------------|----------------------|----------------|
+| Small (10%)  | X bytes             | Y bytes              | Z% |
+| Medium (50%) | X bytes             | Y bytes              | Z% |
+| Large (90%)  | X bytes             | Y bytes              | Z% |
+
+## Performance Measurements
+
+[Include your experimental results here, showing actual execution times]
+
+| Operation | Dense Matrix Time | Sparse Matrix Time | Performance Difference |
+|-----------|-------------------|--------------------|-----------------------|
+| Insert    | X ms              | Y ms               | Z% |
+| Delete    | X ms              | Y ms               | Z% |
+| Retrieve  | X ms              | Y ms               | Z% |
+| Row-Major | X ms              | Y ms               | Z% |
+| Column-Major | X ms           | Y ms               | Z% |
+
+## Conclusion
+
+[Summarize the key findings from your complexity analysis]

@@ -1,0 +1,7 @@
+# Sample zones
+# Format: id,name,details
+1,Downtown,Commercial hub with offices and malls
+2,GreenPark,Residential area with parks
+3,TechValley,IT parks and startups
+4,RiverSide,Recreational and tourist attractions
+5,UniDistrict,Educational institutions and libraries
