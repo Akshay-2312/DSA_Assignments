@@ -52,9 +52,9 @@ Lab_Assignment_1_Inventory_System/
 ```
 
 ## Author
-[Your Name]
-[Your ID]
-[Your Course]
+[Akshay yadav]
+[2401730129]
+[Data Structures]
 
 ## License
 This project is for educational purposes only.
